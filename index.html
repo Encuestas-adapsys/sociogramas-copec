@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -56,13 +55,24 @@
             font-size: 14px;
             color: #777;
         }
+        .footer-images {
+            display: flex;
+            justify-content: center; /* Center the images horizontally */
+            align-items: center; /* Align items vertically in the center (if needed) */
+            gap: 20px; /* Add some space between the images */
+            margin-top: 10px; /* Add some space between the copyright and the images */
+        }
+        .footer-images img {
+            max-height: 50px; /* Adjust the maximum height as needed */
+            width: auto;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sociogramas por Gerencia</h1>
-    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos generados por las evaluaciones cruzadas.</p>
+    <h1>Sociogramas COPEC</h1>
+    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos.</p>
 </header>
 
 <main>
@@ -79,6 +89,10 @@
 
 <footer>
     © 2025 · Visualización generada por Adapsys · Diseño responsivo para uso interno
+    <div class="footer-images">
+        <img src="logoadapsys.png" alt="Logo Adapsys">
+        <img src="logocopec.png" alt="Logo Copec">
+    </div>
 </footer>
 
 </body>
