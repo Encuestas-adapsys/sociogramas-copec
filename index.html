@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #f7f9fb;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
         }
         header {
             background-color: #00b8b8;
@@ -30,6 +33,7 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
+            flex-grow: 1; /* Allow main to grow and push footer to the bottom */
         }
         .link-list {
             display: flex;
@@ -51,28 +55,28 @@
         }
         footer {
             text-align: center;
-            padding: 30px;
+            padding: 20px; /* Reduced padding */
             font-size: 14px;
             color: #777;
         }
-        .footer-images {
+        .logo-container {
             display: flex;
-            justify-content: center; /* Center the images horizontally */
-            align-items: center; /* Align items vertically in the center (if needed) */
-            gap: 20px; /* Add some space between the images */
-            margin-top: 10px; /* Add some space between the copyright and the images */
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 20px 0; /* Add padding around the logos */
         }
-        .footer-images img {
-            max-height: 50px; /* Adjust the maximum height as needed */
+        .logo-container img {
+            max-height: 40px; /* Adjust as needed for consistent visual height */
             width: auto;
+            margin: 0 10px; /* Add some horizontal space between logos */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Sociogramas COPEC</h1>
-    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos.</p>
+    <h1>Sociogramas por Gerencia (2025)</h1>
+    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos generados por las evaluaciones cruzadas.</p>
 </header>
 
 <main>
@@ -89,7 +93,7 @@
 
 <footer>
     © 2025 · Visualización generada por Adapsys · Diseño responsivo para uso interno
-    <div class="footer-images">
+    <div class="logo-container">
         <img src="logoadapsys.png" alt="Logo Adapsys">
         <img src="logocopec.png" alt="Logo Copec">
     </div>
