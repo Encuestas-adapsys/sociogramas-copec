@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualizador Copec</title>
+    <title>Visualizador de sociogramas - COPEC</title>
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -13,7 +13,7 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+            min-height: 100vh;
         }
         header {
             background-color: #00b8b8;
@@ -33,7 +33,7 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
-            flex-grow: 1; /* Allow main to grow and push footer to the bottom */
+            flex-grow: 1;
         }
         .link-list {
             display: flex;
@@ -55,7 +55,7 @@
         }
         footer {
             text-align: center;
-            padding: 20px; /* Reduced padding */
+            padding: 20px;
             font-size: 14px;
             color: #777;
         }
@@ -63,12 +63,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 0 20px 0; /* Add padding around the logos */
+            padding: 10px 0 20px 0;
         }
         .logo-container img {
-            max-height: 40px; /* Adjust as needed for consistent visual height */
+            max-height: 40px;
             width: auto;
-            margin: 0 10px; /* Add some horizontal space between logos */
+            margin: 0 10px;
+        }
+        .copec-logo {
+            max-height: 30px; /* Adjust this value to make the Copec logo smaller */
         }
     </style>
 </head>
@@ -76,7 +79,7 @@
 
 <header>
     <h1>Sociogramas por Gerencia</h1>
-    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos generados por las evaluaciones cruzadas.</p>
+    <p>Explora las relaciones entre gerencias a través de los sociogramas interactivos.</p>
 </header>
 
 <main>
@@ -89,10 +92,10 @@
 </main>
 
 <footer>
-    © 2025 · Visualización generada por Adapsys · Diseño responsivo para uso interno
+    © 2025 · Visualización generada por Adapsys · Formato exclusivo para uso interno
     <div class="logo-container">
         <img src="logoadapsys.png" alt="Logo Adapsys">
-        <img src="logocopec.png" alt="Logo Copec">
+        <img src="logocopec.png" alt="Logo Copec" class="copec-logo">
     </div>
 </footer>
 
